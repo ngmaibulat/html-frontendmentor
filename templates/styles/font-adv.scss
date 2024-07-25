@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "YourFontName";
+  src: url("path/to/your/font.woff2") format("woff2"),
+    url("path/to/your/font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2)
+    format("woff2");
+}
+/* Similar declarations for other weights */

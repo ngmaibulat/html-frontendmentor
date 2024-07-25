@@ -1,5 +1,9 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&display=swap");
+body {
+  font-display: swap;
+}
+
 /* Colors */
 /* Basic */
 * {
@@ -18,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-light-gray);
+  background-color: #ffffff;
   font-family: Karla, sans-serif;
   font-size: 16px;
 }
@@ -43,7 +47,7 @@ body {
 
 @media screen and (min-width: 800px) {
   .container {
-    border: 1px solid red;
+    border: none;
   }
 }
 
