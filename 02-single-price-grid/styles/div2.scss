@@ -1,0 +1,54 @@
+/* Div 2 */
+.subscription {
+  background-color: var(--color-cyan);
+  padding: 40px;
+}
+
+.subscription h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subscription .dollar {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.subscription .period {
+  color: white;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+.subscription p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.btn {
+  background-color: var(--color-bright-yellow);
+  color: white;
+  margin: 0;
+
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  //Optional
+  transition-property: background-color;
+  transition-delay: 100ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+// Optional
+.btn:hover {
+  background-color: navy;
+  cursor: pointer;
+}

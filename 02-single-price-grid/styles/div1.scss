@@ -1,0 +1,22 @@
+/* Div 1 */
+.community {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 40px;
+}
+
+.community h3 {
+  color: var(--color-cyan);
+  margin-bottom: 20px;
+}
+
+.community h4 {
+  color: var(--color-bright-yellow);
+  margin-bottom: 20px;
+}
+
+.community p {
+  color: gray;
+  line-height: 2;
+}
