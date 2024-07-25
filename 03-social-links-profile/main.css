@@ -1,0 +1,165 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Colors */
+:root {
+  /* Primary Colors */
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  /* Neutral Colors */
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%);
+  --color-bg-3: rgba(74, 190, 189, 255);
+}
+
+/* Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-gray);
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 350px) {
+  html,
+  body {
+    min-height: 110%;
+  }
+}
+@media screen and (min-width: 351px) and (max-width: 500px) {
+  html,
+  body {
+    min-height: 105%;
+  }
+}
+/* Container */
+.container {
+  margin: 40px;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 800px) {
+  .lower {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .lower .subscription {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    width: 50%;
+  }
+  .lower .why {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+  }
+}
+/* Div 1 */
+.community {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 40px;
+}
+
+.community h1 {
+  color: var(--color-cyan);
+  margin-bottom: 20px;
+}
+
+.community h2 {
+  color: var(--color-bright-yellow);
+  margin-bottom: 20px;
+}
+
+.community p {
+  color: gray;
+  line-height: 2;
+}
+
+/* Div 2 */
+.subscription {
+  background-color: var(--color-cyan);
+  padding: 40px;
+}
+
+.subscription h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subscription .dollar {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.subscription .period {
+  color: white;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+.subscription p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.btn {
+  background-color: var(--color-bright-yellow);
+  color: white;
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition-property: background-color;
+  transition-delay: 100ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  background-color: navy;
+  cursor: pointer;
+}
+
+/* Div 3 */
+.why {
+  background-color: var(--color-bg-3);
+  padding: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.why h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.why ul {
+  list-style-type: none;
+  color: white;
+  font-size: smaller;
+  line-height: 2;
+}
+
+/*# sourceMappingURL=main.css.map */
