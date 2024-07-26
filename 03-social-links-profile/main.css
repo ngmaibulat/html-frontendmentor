@@ -22,9 +22,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  font-family: Karla, sans-serif;
-  font-size: 16px;
+  background-color: hsl(0, 0%, 8%);
+  font-family: Inter;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 350px) {
@@ -49,6 +49,36 @@ body {
   .container {
     border: none;
   }
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 12%);
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.profile-image {
+  padding: 10px;
+}
+.profile-image img {
+  border-radius: 50%;
+  display: block;
+  margin-inline: auto;
+}
+
+.profile-header {
+  padding: 20px;
+}
+.profile-header h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+
+.profile-links ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
