@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 body {
   font-display: swap;
 }
@@ -54,7 +54,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 12%);
-  border: 1px solid red;
   border-radius: 10px;
 }
 
@@ -65,6 +64,7 @@ body {
   border-radius: 50%;
   display: block;
   margin-inline: auto;
+  width: 100px;
 }
 
 .profile-header {
@@ -72,13 +72,36 @@ body {
 }
 .profile-header h1 {
   color: hsl(0, 0%, 100%);
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.profile-header .location {
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+  margin: 10px;
+}
+.profile-header .info {
+  color: hsl(0, 0%, 100%);
+  margin-top: 2rem;
+  font-size: smaller;
 }
 
 .profile-links ul {
   list-style-type: none;
   padding: 10px;
   margin: 0;
+}
+.profile-links li {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.profile-links li:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

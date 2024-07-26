@@ -3,6 +3,19 @@
 
   h1 {
     color: $white;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .location {
+    color: $location;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .info {
+    color: $white;
+    margin-top: 2rem;
+    font-size: smaller;
   }
 }
