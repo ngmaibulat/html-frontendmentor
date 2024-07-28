@@ -74,11 +74,16 @@
     flex-direction: row;
 
     p {
-      height: 160px;
+      height: 200px;
     }
 
     button {
       width: 100%;
+    }
+
+    > div {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
 
     > div:nth-child(1) {

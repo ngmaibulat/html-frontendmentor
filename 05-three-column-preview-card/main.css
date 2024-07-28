@@ -102,10 +102,14 @@ header {
     flex-direction: row;
   }
   .cards p {
-    height: 160px;
+    height: 200px;
   }
   .cards button {
     width: 100%;
+  }
+  .cards > div {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .cards > div:nth-child(1) {
     border-top-left-radius: 10px;
