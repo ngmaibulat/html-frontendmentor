@@ -47,20 +47,21 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 350px;
-  min-height: 400px;
+  min-height: 350px;
   background-color: white;
   background-image: url("starter/images/bg-pattern-card.svg");
   background-repeat: no-repeat;
 }
 .profile img {
   width: 120px;
+  margin-top: 5rem;
   border-radius: 50%;
   outline: 5px solid white;
 }
 .profile h1 {
   display: inline-block;
   font-size: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .profile .age {
   color: gray;
@@ -70,11 +71,11 @@ body {
 .profile .location {
   color: gray;
   font-size: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .profile hr {
   width: 100%;
-  margin: 1rem 0;
+  margin-top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .profile div.counters {
