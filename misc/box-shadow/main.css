@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+
+  background-color: blueviolet;
+}
+
+.container {
+  margin-inline: 100px;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.box {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 200px;
+
+  display: grid;
+  place-items: center;
+}
+
+.box1 {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box2 {
+  position: relative;
+}
+
+.box2::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  width: 90%;
+  height: 50px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  transform-origin: left;
+  transform: skewY(5deg);
+  z-index: -1;
+
+  filter: blur(5px);
+}
+
+.box3 {
+  position: relative;
+}
+
+.box3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 30px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transform-origin: right;
+  transform: skewY(-8deg);
+  z-index: -1;
+
+  filter: blur(10px);
+}
+
+.box3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 30px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transform-origin: left;
+  transform: skewY(8deg);
+  z-index: -1;
+
+  filter: blur(10px);
+}
+
+.box4 {
+  position: relative;
+}
+
+.box4::before {
+  content: "";
+  position: absolute;
+
+  bottom: -50px;
+  left: 5%;
+  width: 90%;
+  height: 20px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+
+  /* transform-origin: right;
+  transform: skewY(-8deg); */
+  z-index: -1;
+
+  filter: blur(10px);
+}
+
+.box5 {
+  position: relative;
+}
+
+.box5::before {
+  content: "";
+  position: absolute;
+
+  bottom: -15%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10%;
+
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.box6 {
+  position: relative;
+
+  background-color: rgb(143, 50, 230);
+  border-radius: 15px;
+
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.box7 {
+  position: relative;
+
+  background-color: rgb(143, 50, 230);
+  border-radius: 15px;
+
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.3);
+}

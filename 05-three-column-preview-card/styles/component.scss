@@ -1,0 +1,32 @@
+@media screen and (max-width: 599px) {
+  .results {
+    height: 100%;
+
+    .score {
+      height: 40%;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .results {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+
+    // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+    .score {
+      border-radius: 2rem;
+    }
+  }
+
+  .results > div {
+    width: 50%;
+    // height: auto;
+  }
+}

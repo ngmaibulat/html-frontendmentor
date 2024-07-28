@@ -1,0 +1,12 @@
+/* Container */
+
+.container {
+  margin-inline: auto;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    height: 100%;
+  }
+}

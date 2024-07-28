@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+  min-width: 200px;
+
+  border-radius: 5px;
+}
+
+.card:nth-child(1) {
+  background-color: red;
+}
+
+.card:nth-child(2) {
+  background-color: green;
+}
+
+.card:nth-child(3) {
+  background-color: blue;
+}
+
+.cards:hover :not(:hover) {
+  opacity: 0.5;
+  filter: blur(2px);
+}

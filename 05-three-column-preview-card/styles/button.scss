@@ -1,0 +1,19 @@
+button {
+  background-color: $dark-gray-blue;
+  //   background-color: $persian-blue;
+  color: white;
+  //   color: $dark-gray-blue;
+
+  border: 1px solid red;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+}
+
+button:hover {
+  @include background-gradient;
+  cursor: pointer;
+}
