@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 /* Colors */
 /* Basic */
 * {
@@ -18,13 +18,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 100%);
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
-}
-
-header {
-  display: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
 }
 
 /* Container */
@@ -42,123 +38,88 @@ header {
     border: none;
   }
 }
-.cards {
+.order {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
 }
-.cards > div {
-  padding: 2rem;
-}
-.cards h2 {
-  text-transform: uppercase;
-  color: white;
-  font-family: "Big Shoulders Display";
-  font-size: 2rem;
-  margin-top: 1rem;
+.order > img {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   margin-bottom: 1rem;
 }
-.cards p {
-  color: white;
-  margin-bottom: 1rem;
+.order h1 {
+  text-align: center;
+}
+.order p {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: larger;
+  color: gray;
+  width: 80%;
+}
+.order > div.summary {
+  text-align: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.order > div.summary h2 {
+  font-size: 1rem;
+  padding: 0;
+  text-align: left;
+}
+.order > div.summary p {
+  padding: 0;
+  text-align: left;
+}
+.order > div.summary > div.details {
+  padding-left: 2rem;
+  width: 60%;
+}
+.order > div.summary a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.order button {
+  padding: 1rem;
+  width: 80%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.order button.ok {
+  background-color: blue;
+}
+.order button.cancel {
+  color: gray;
+  transform: translateY(-2rem);
 }
 
-@media screen and (max-width: 599px) {
-  .cards > div:nth-child(1) {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(1) button {
-    color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(1) button:hover {
-    background-color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(2) {
-    background-color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(2) button {
-    color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(2) button:hover {
-    background-color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(3) {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: hsl(179, 100%, 13%);
-  }
-  .cards > div:nth-child(3) button {
-    color: hsl(179, 100%, 13%);
-  }
-  .cards > div:nth-child(3) button:hover {
-    background-color: hsl(179, 100%, 13%);
-  }
-}
-@media screen and (min-width: 600px) {
-  .cards {
-    flex-direction: row;
-  }
-  .cards p {
-    height: 200px;
-  }
-  .cards button {
-    width: 100%;
-  }
-  .cards > div {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .cards > div:nth-child(1) {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(1) button {
-    color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(1) button:hover {
-    background-color: hsl(31, 77%, 52%);
-  }
-  .cards > div:nth-child(2) {
-    background-color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(2) button {
-    color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(2) button:hover {
-    background-color: hsl(184, 100%, 22%);
-  }
-  .cards > div:nth-child(3) {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: hsl(179, 100%, 13%);
-  }
-  .cards > div:nth-child(3) button {
-    color: hsl(179, 100%, 13%);
-  }
-  .cards > div:nth-child(3) button:hover {
-    background-color: hsl(179, 100%, 13%);
-  }
-}
 button {
   background-color: white;
-  color: hsl(31, 77%, 52%);
+  color: white;
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem;
+  margin: 1rem;
   margin-top: 1rem;
   width: 50%;
+  border-radius: 1rem;
   border: none;
-  border-radius: 2rem;
-}
-
-button:hover {
-  color: white !important;
-  cursor: pointer;
-  outline: white solid 2px;
 }
 
 /*# sourceMappingURL=main.css.map */
