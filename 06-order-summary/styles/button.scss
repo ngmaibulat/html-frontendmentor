@@ -1,0 +1,21 @@
+button {
+  background-color: white;
+  color: $bright-orange;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 50%;
+
+  border: none;
+  border-radius: 2rem;
+}
+
+button:hover {
+  // background-color: darkorange;
+  color: white !important;
+  cursor: pointer;
+  outline: white solid 2px;
+}

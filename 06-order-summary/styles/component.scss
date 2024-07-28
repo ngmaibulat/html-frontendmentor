@@ -1,0 +1,131 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  align-items: stretch;
+
+  > div {
+    padding: 2rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Big Shoulders Display";
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: white;
+    // opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cards {
+    > div:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: $bright-orange;
+
+      button {
+        color: $bright-orange;
+      }
+
+      button:hover {
+        background-color: $bright-orange;
+      }
+    }
+
+    > div:nth-child(2) {
+      background-color: $dark-cyan;
+
+      button {
+        color: $dark-cyan;
+      }
+
+      button:hover {
+        background-color: $dark-cyan;
+      }
+    }
+
+    > div:nth-child(3) {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: $very-dark-cyan;
+
+      button {
+        color: $very-dark-cyan;
+      }
+
+      button:hover {
+        background-color: $very-dark-cyan;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+
+    p {
+      height: 200px;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    > div {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    > div:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      background-color: $bright-orange;
+
+      button {
+        color: $bright-orange;
+      }
+
+      button:hover {
+        background-color: $bright-orange;
+      }
+    }
+
+    > div:nth-child(2) {
+      background-color: $dark-cyan;
+
+      button {
+        color: $dark-cyan;
+      }
+
+      button:hover {
+        background-color: $dark-cyan;
+      }
+    }
+
+    > div:nth-child(3) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      background-color: $very-dark-cyan;
+
+      button {
+        color: $very-dark-cyan;
+      }
+
+      button:hover {
+        background-color: $very-dark-cyan;
+      }
+    }
+  }
+}
