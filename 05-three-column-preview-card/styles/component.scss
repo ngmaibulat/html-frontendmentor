@@ -1,32 +1,126 @@
-@media screen and (max-width: 599px) {
-  .results {
-    height: 100%;
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  align-items: stretch;
 
-    .score {
-      height: 40%;
-      border-bottom-left-radius: 2rem;
-      border-bottom-right-radius: 2rem;
+  > div {
+    padding: 2rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Big Shoulders Display";
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: white;
+    // opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cards {
+    > div:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: $bright-orange;
+
+      button {
+        color: $bright-orange;
+      }
+
+      button:hover {
+        background-color: $bright-orange;
+      }
+    }
+
+    > div:nth-child(2) {
+      background-color: $dark-cyan;
+
+      button {
+        color: $dark-cyan;
+      }
+
+      button:hover {
+        background-color: $dark-cyan;
+      }
+    }
+
+    > div:nth-child(3) {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: $very-dark-cyan;
+
+      button {
+        color: $very-dark-cyan;
+      }
+
+      button:hover {
+        background-color: $very-dark-cyan;
+      }
     }
   }
 }
 
 @media screen and (min-width: 600px) {
-  .results {
-    display: flex;
+  .cards {
     flex-direction: row;
-    border-radius: 2rem;
 
-    // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-
-    .score {
-      border-radius: 2rem;
+    p {
+      height: 160px;
     }
-  }
 
-  .results > div {
-    width: 50%;
-    // height: auto;
+    button {
+      width: 100%;
+    }
+
+    > div:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      background-color: $bright-orange;
+
+      button {
+        color: $bright-orange;
+      }
+
+      button:hover {
+        background-color: $bright-orange;
+      }
+    }
+
+    > div:nth-child(2) {
+      background-color: $dark-cyan;
+
+      button {
+        color: $dark-cyan;
+      }
+
+      button:hover {
+        background-color: $dark-cyan;
+      }
+    }
+
+    > div:nth-child(3) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      background-color: $very-dark-cyan;
+
+      button {
+        color: $very-dark-cyan;
+      }
+
+      button:hover {
+        background-color: $very-dark-cyan;
+      }
+    }
   }
 }

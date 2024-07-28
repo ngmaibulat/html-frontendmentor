@@ -1,19 +1,21 @@
 button {
-  background-color: $dark-gray-blue;
-  //   background-color: $persian-blue;
-  color: white;
-  //   color: $dark-gray-blue;
+  background-color: white;
+  color: $bright-orange;
 
-  border: 1px solid red;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+
   padding: 1rem;
-  margin-top: 2rem;
-  width: 100%;
+  margin-top: 1rem;
+  width: 50%;
+
   border: none;
   border-radius: 2rem;
 }
 
 button:hover {
-  @include background-gradient;
+  // background-color: darkorange;
+  color: white !important;
   cursor: pointer;
+  outline: white solid 2px;
 }

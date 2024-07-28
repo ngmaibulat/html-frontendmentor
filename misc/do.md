@@ -1,3 +1,5 @@
+### CSS
+
 - checkbox styling without hiding it
 - buttons
 - tables
@@ -12,7 +14,8 @@
 ### Practice
 
 - Solar System
-- Links
-- Frontend Resources
-- List of Completed Projects
-- Cards:hover - blur non-hovered cards
+- Links: Frontend, DevOps, KVM
+
+### Adv
+
+- object type:text/html
