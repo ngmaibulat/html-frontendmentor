@@ -3,11 +3,68 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+
+  padding: 0;
   border-radius: 1rem;
-  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-  min-width: 400px;
+  min-width: 350px;
   min-height: 400px;
+
+  background-color: white;
+  background-image: url("starter/images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+
+  img {
+    width: 120px;
+    border-radius: 50%;
+    outline: 5px solid white;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  .age {
+    color: gray;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .location {
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  hr {
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  div.counters {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem 0;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .label {
+        color: gray;
+        font-size: 1rem;
+      }
+    }
+  }
 }
