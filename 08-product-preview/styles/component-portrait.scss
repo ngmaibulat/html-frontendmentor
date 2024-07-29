@@ -1,0 +1,76 @@
+@media (orientation: portrait) {
+  .preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: white;
+    padding: 0;
+    border-radius: 1rem;
+    max-width: 400px;
+
+    .header {
+      padding: 0;
+
+      img {
+        max-width: 400px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+    }
+
+    .details {
+      padding: 2rem;
+      // outline: 1px solid black;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-size: 0.8rem;
+      font-family: "Montserrat", sans-serif;
+      opacity: 0.8;
+      color: gray;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-inline: 0;
+      margin-block: 0.5rem;
+    }
+
+    p {
+      color: gray;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .price {
+      margin-top: 1rem;
+      .newprice {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $dark-cyan;
+      }
+
+      .oldprice {
+        display: inline-block;
+        text-decoration: line-through;
+        font-size: small;
+        opacity: 0.5;
+        margin-left: 1rem;
+        transform: translateY(-0.2rem);
+      }
+    }
+
+    button {
+      width: 95%;
+      color: white;
+      background-color: $dark-cyan;
+
+      img {
+        margin-inline-end: 0.5rem;
+        transform: translateY(0.2rem);
+      }
+    }
+  }
+}

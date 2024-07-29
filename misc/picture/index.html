@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="picture">
+        <!-- <img src="starter/images/image-header-desktop.jpg" alt="header" /> -->
+        <picture>
+          <source media="(min-width: 400px)" srcset="images/slidev.svg" />
+          <source
+            media="(max-width: 400px)"
+            srcset="images/json-schema-icon.svg"
+          />
+          <img src="images/internet-computer-icon.svg" alt="" />
+        </picture>
+      </div>
+
+      <div class="picture">
+        <!-- <img src="starter/images/image-header-desktop.jpg" alt="header" /> -->
+        <picture>
+          <source media="(orientation:landscape)" srcset="images/slidev.svg" />
+          <source
+            media="(orientation:portrait)"
+            srcset="images/json-schema-icon.svg"
+          />
+          <img src="images/internet-computer-icon.svg" alt="" />
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>

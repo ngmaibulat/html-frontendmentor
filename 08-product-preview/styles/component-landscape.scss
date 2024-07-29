@@ -1,0 +1,86 @@
+@media (orientation: landscape) {
+  .preview {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+    background-color: white;
+    padding: 0;
+    border-radius: 1rem;
+
+    max-width: 800px;
+    width: 800px;
+    max-height: 600px;
+    height: 600px;
+
+    .header {
+      padding: 0;
+
+      img {
+        max-width: 400px;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+    }
+
+    .details {
+      padding: 2rem;
+      // outline: 1px solid black;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-size: 0.8rem;
+      font-family: "Montserrat", sans-serif;
+      opacity: 0.8;
+      color: gray;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-inline: 1rem;
+      margin-block: 2rem;
+    }
+
+    p {
+      color: gray;
+      font-family: "Montserrat", sans-serif;
+      margin-block: 3rem;
+      padding-right: 4rem;
+      line-height: 2rem;
+    }
+
+    .price {
+      margin-top: 1rem;
+      .newprice {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $dark-cyan;
+      }
+
+      .oldprice {
+        display: inline-block;
+        text-decoration: line-through;
+        font-size: small;
+        opacity: 0.5;
+        margin-left: 1rem;
+        transform: translateY(-0.2rem);
+      }
+    }
+
+    button {
+      margin-inline: 0;
+      margin-block: 2rem;
+
+      width: 100%;
+      color: white;
+      background-color: $dark-cyan;
+
+      img {
+        margin-inline-end: 0.5rem;
+        transform: translateY(0.2rem);
+      }
+    }
+  }
+}

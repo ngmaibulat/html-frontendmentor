@@ -19,16 +19,18 @@
     <main class="container">
       <div class="preview">
         <div class="header">
-          <img src="starter/images/image-product-mobile.jpg" alt="" />
           <picture>
             <source
-              media="(min-width: 701px)"
+              media="(orientation:landscape)"
               srcset="starter/images/image-product-desktop.jpg"
             />
             <source
-              media="(max-width: 700px)"
+              media="(orientation:portrait)"
+              srcset="starter/images/image-product-mobile.jpg"
+            />
+            <img
               src="starter/images/image-product-mobile.jpg"
-              alt="Parfume preview"
+              alt="Product Image"
             />
           </picture>
         </div>
